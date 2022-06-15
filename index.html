@@ -2,92 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <script src="https://kit.fontawesome.com/71c6c4e8dd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css" />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css" />
+
 </head>
 
 <body>
-    <section id="header">
-        <nav class="navbar navbar-expand-lg navbar-dark  site-topnav">
-            <a class="nav-link first " href="#">Department of CSE</a>
-            <div class="toggle-part">
+  <div class="sidebar">
+    <div class="logo-detail">
+      <div class="logo">
+        <i class="fa fa-graduation-cap"></i>
+      </div>
+      <i class="fa fa-bars" id="btn"></i>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search...">
+        <span class="tooltip">SEARCH</span>
 
-                <li class="nav-item icon">
-                    <i class="fa-solid fa fa-search"></i>
-                </li>
-                <button class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse"
-                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-home"></i>
+          <span class="link_name">HOME</span>
+        </a>
+        <span class="tooltip">HOME</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-balance-scale"></i>
+          <span class="link_name">VISION AND MISSION</span>
+        </a>
+        <span class="tooltip">VISION AND MISSION</span>
 
-            </div>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-users"></i>
+          <span class="link_name">STUDENTS</span>
+        </a>
+        <span class="tooltip">STUDENTS</span>
+
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-book"></i>
+          <span class="link_name">SYLLABUS</span>
+        </a>
+        <span class="tooltip">SYLLABUS</span>
+
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-calendar"></i>
+          <span class="link_name">TIMETABLE</span>
+        </a>
+        <span class="tooltip">TIMETABLE</span>
+
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-bell"></i>
+          <span class="link_name">NOTICE</span>
+        </a>
+        <span class="tooltip">NOTICE</span>
+
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-address-book"></i>
+          <span class="link_name">CONTACT US</span>
+        </a>
+        <span class="tooltip">CONTACT US</span>
+
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-exclamation-triangle"></i>
+          <span class="link_name">DISCLAIMER</span>
+        </a>
+        <span class="tooltip">DISCLAIMER</span>
+
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-comment"></i>
+          <span class="link_name">FEEDBACK</span>
+        </a>
+        <span class="tooltip">FEEDBACK</span>
+      </li>
 
 
-            <div class="collapse navbar-collapse site-navtov " id="navbarNav">
-
-                <ul class="navbar-nav navbar-left ">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">VISION AND MISSION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">STUDENTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SYLLABUS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">TIMETABLE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">NOTICE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">DISCLAIMER</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">GALLERY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FEEDBACK</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PO,PSO,PEO</a>
-                    </li>
-                    <li class="icon-last ">
-                        <button>
-                        <i class="fa-solid fa fa-search"></i>
-                        </button>
-                    </li>
-                </ul>
-                 
-
-            </div>
-        </nav>
-    </section>
-
+    </ul>
+  </div>
+  <div class="body-content">
+    <div class="top-text">Department of CSE</div>
+  </div>
+<script src="index.js"></script>
 </body>
 
 </html>
