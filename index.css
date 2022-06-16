@@ -185,13 +185,7 @@ body {
 }
 
 /* BODY */
-/* .body-content {
-  position: absolute;
-  height: 100%;
-  width: calc(100% - 78px);
-  left: 78px;
-  transition: all 0.5 ease;
-} */
+
 
 .body-content .top-text {
   font-size: 25px;
@@ -206,3 +200,19 @@ body {
   left: 240px;
 
 }
+@media (min-width:1000px) {
+  .body-content {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 78px);
+  left: 78px;
+  transition: all 0.5 ease;
+}
+.sidebar.active~.body-content {
+  width: calc(100% - 240px);
+  left: 240px;
+
+}
+}
+
+/**********CONTACT US*************/
