@@ -177,6 +177,10 @@ body {
 }
 
 @media (max-width:991px) {
+    .contact{
+    box-shadow: none;
+
+    }
     .contactUs{
         padding: 20px;
     }
@@ -194,11 +198,11 @@ body {
         gap: 0;
         flex-direction: column;
     }
-    .formBox .row100{
+    /* .formBox .row100{
         display: flex;
         gap: 0;
         flex-direction: column;
-    }
+    } */
     .infoBox{
         width: 100%;
     }
