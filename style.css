@@ -176,7 +176,7 @@ body {
     height: 100%;
 }
 
-@media (max-width:1300px) {
+@media (max-width:991px) {
     .contactUs{
         padding: 20px;
     }
