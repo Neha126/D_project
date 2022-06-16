@@ -177,10 +177,6 @@ body {
 }
 
 @media (max-width:991px) {
-    .contact{
-    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
-
-    }
     .contactUs{
         padding: 20px;
     }
