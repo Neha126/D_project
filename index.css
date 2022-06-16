@@ -12,13 +12,12 @@ body {
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
+  display: flex;
 }
 
 .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
+  position: relative;
+ 
   width: 78px;
   background: #11101d;
   padding: 6px 14px;
@@ -27,6 +26,10 @@ body {
 
 .sidebar.active {
   width: 240px;
+  position: fixed;
+   top: 0;
+  left: 0;
+  height: 100%;
 }
 
 .sidebar .logo-detail .logo {
@@ -182,13 +185,13 @@ body {
 }
 
 /* BODY */
-.body-content {
+/* .body-content {
   position: absolute;
   height: 100%;
   width: calc(100% - 78px);
   left: 78px;
   transition: all 0.5 ease;
-}
+} */
 
 .body-content .top-text {
   font-size: 25px;
@@ -199,7 +202,7 @@ body {
 }
 
 .sidebar.active~.body-content {
-  width: calc(100% - 240px);
+  /* width: calc(100% - 240px); */
   left: 240px;
 
 }
