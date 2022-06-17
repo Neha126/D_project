@@ -19,11 +19,11 @@ body {
 
 .sidebar {
   position: relative;
- 
   width: 78px;
   background: #11101d;
   padding: 6px 14px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
+  left: -100vw;
 }
 
 .sidebar.active {
@@ -60,6 +60,9 @@ body {
 .logo-detail .logo .logo_name {
   font-size: 20px;
   font-weight: 400;
+}
+.logo .img-top{
+  width: 30%;
 }
 
 .sidebar #btn {
@@ -187,37 +190,56 @@ body {
 }
 
 /* BODY */
+#btn2{
+  font-size: 30px;
+  margin: 12px;
+  /* align-items: flex-start; */
+
+}
+#btn2.actice{
+  display: none;
+}
+
+.body-content{
+  display: flex;
+   position: absolute;
+   /* height: 100%;
+   width: calc(100% - 150px); 
+   left: 15px; */
+}
 
 
 .body-content .top-text {
   font-size: 25px;
   font-weight: 500;
   color: #1d1b31;
-  margin: 12px;
-  /* white-space: nowrap; */
+  margin-top: 10px;
 
 }
 
 .sidebar.active~.body-content {
-  /* width: calc(100% - 240px); */
+  width: calc(100% - 240px);
   left: 240px;
+}
+.sidebar.active~.body-content .top-text {
+ position: absolute;
+  z-index: 1;
+}
 
+.sidebar.active ~.body-content #btn2{
+display: none;
 }
 @media (min-width:1000px) {
   .body-content {
   position: absolute;
   height: 100%;
-  width: calc(100% - 78px);
-  left: 78px;
-  transition: all 0.5 ease;
+  width: calc(100% - 78px); 
+  left: 10px;
+  transition: all 0.3 ease;
 }
 .sidebar.active~.body-content {
-  width: calc(100% - 240px);
+  /* width: calc(100% - 240px); */
   left: 240px;
 
 }
 }
-
-
-
-/**********CONTACT US*************/
