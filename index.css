@@ -28,10 +28,11 @@ body {
 
 .sidebar.active {
   width: 240px;
-  position: fixed;
+  position: relative;
    top: 0;
   left: 0;
-  height: 100%;
+  height: auto;
+  z-index: 10;
 }
 
 .sidebar .logo-detail .logo {
@@ -197,15 +198,13 @@ body {
 
 }
 #btn2.actice{
-  display: none;
+  visibility: hidden;
 }
 
 .body-content{
   display: flex;
    position: absolute;
-   /* height: 100%;
-   width: calc(100% - 150px); 
-   left: 15px; */
+ 
 }
 
 
@@ -214,16 +213,15 @@ body {
   font-weight: 500;
   color: #1d1b31;
   margin-top: 10px;
-
 }
 
 .sidebar.active~.body-content {
-  width: calc(100% - 240px);
-  left: 240px;
-}
-.sidebar.active~.body-content .top-text {
- position: absolute;
-  z-index: 1;
+  width: 100%;
+  height: auto;
+  /* position: relative;
+  /* left: 0;
+  top: 0; */
+  z-index: 2; */
 }
 
 .sidebar.active ~.body-content #btn2{
