@@ -18,20 +18,21 @@ body {
 }
 
 .sidebar {
-  position: relative;
+  position: absolute;
   width: 78px;
   background: #11101d;
   padding: 6px 14px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   left: -100vw;
+  height: 100vh;
 }
 
 .sidebar.active {
   width: 240px;
-  position: relative;
+  position: absolute;
    top: 0;
   left: 0;
-  height: auto;
+  height: 100vh;
   z-index: 10;
 }
 
@@ -64,6 +65,7 @@ body {
 }
 .logo .img-top{
   width: 30%;
+  padding-top: 10px;
 }
 
 .sidebar #btn {
@@ -203,7 +205,7 @@ body {
 
 .body-content{
   display: flex;
-   position: absolute;
+  /* margin-left: -60px; */
  
 }
 
@@ -225,11 +227,11 @@ body {
 }
 
 .sidebar.active ~.body-content #btn2{
-display: none;
+visibility: hidden;
 }
 @media (min-width:1000px) {
   .body-content {
-  position: absolute;
+  /* position: absolute; */
   height: 100%;
   width: calc(100% - 78px); 
   left: 10px;
@@ -237,7 +239,7 @@ display: none;
 }
 .sidebar.active~.body-content {
   /* width: calc(100% - 240px); */
-  left: 240px;
+  left: 200px;
 
 }
 }
